@@ -10,5 +10,10 @@ class Printer {
     {
         console.log('printNameArrowFn: ', this.name);
     }
-
 }
+
+const myPrinter = new Printer();
+myPrinter.printName();
+myPrinter.printNameArrowFn();
+
+
