@@ -16,4 +16,15 @@ const myPrinter = new Printer();
 myPrinter.printName();
 myPrinter.printNameArrowFn();
 
+const customPrinter = {
+    name: 'I am the custom Printer',
+    printName: myPrinter.printName,
+    printNameArrowFn: myPrinter.printNameArrowFn
+};
+
+customPrinter.printName();
+customPrinter.printNameArrowFn();
+
+
+
 
